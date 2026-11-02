@@ -1,1 +1,61 @@
-#Dashboard do Morador (entrada do site)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZELA - Dashboard do Morador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="cabecalho__marca">
+            <img src="img/logo-zela.png" alt="ZELA - página inicial" class="cabecalho__logo">
+        </a>
+
+        <nav class="cabecalho__navegacao">
+            <a href="index.html" class="cabecalho__link" aria-current="page">Morador</a>
+            <a href="ocorrencia.html" class="cabecalho__link">Registrar ocorrência</a>
+            <a href="autoridade.html" class="cabecalho__link">Defesa Civil</a>
+        </nav>
+    </header>
+
+    <main class="pagina">
+
+        <h1 class="pagina__titulo">Dashboard do Morador</h1>
+        <p class="pagina__descricao">Consulte o alerta da sua região e encontre um local seguro.</p>
+
+        <article class="card-alerta" aria-labelledby="titulo-alerta">
+
+            <p class="selo selo--risco-alto">Risco alto</p>
+
+            <h2 class="card-alerta__titulo" id="titulo-alerta">Alerta de enchente</h2>
+
+            <p class="card-alerta__mensagem">
+                Alagamento identificado na sua região. Evite áreas inundadas
+                e procure um local seguro.
+            </p>
+
+            <a href="local-seguro.html" class="botao botao--primario">Ver locais seguros</a>
+
+            <p class="card-alerta__aviso">Alerta fictício para demonstração acadêmica.</p>
+        </article>
+
+        <section class="atalhos" aria-labelledby="titulo-atalhos">
+            <h2 class="atalhos__titulo" id="titulo-atalhos">Viu um problema na rua?</h2>
+            <p class="atalhos__descricao">
+                Bueiro entupido, árvore caída ou via interditada: avise a cidade em poucos passos.
+            </p>
+            <a href="ocorrencia.html" class="botao botao--secundario">Registrar ocorrência</a>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Simulação acadêmica. Mapas, abrigos, alertas e ocorrências são demonstrativos.</p>
+    </footer>
+
+</body>
+</html>
