@@ -354,6 +354,27 @@
     border-color: #C62828;
 }
 
+/* Corrige o hover para não reagir quando o campo está desabilitado */
+.campo__entrada:disabled:hover {
+    border-color: #6B7FCB;
+}
+
+/* ERROR: também reage ao aria-invalid */
+.campo__entrada[aria-invalid="true"] {
+    border-color: #C62828;
+}
+
+/* ---------- CAMPO DE SELEÇÃO ---------- */
+
+.campo__selecao {
+    cursor: pointer;
+}
+
+/* ACTIVE: lista aberta */
+.campo__selecao:active {
+    border-color: #0F4C5C;
+}
+
 .campo__ajuda {
     font-size: 14px;          
     color: #0F4C5C;
