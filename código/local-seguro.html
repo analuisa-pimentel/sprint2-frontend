@@ -37,7 +37,7 @@
 
                 <!-- [PRONTO] Campo de Texto: HTML e CSS com os 6 estados -->
                 <div class="campo" id="campo-endereco">
-                    <label for="endereco" class="campo__rotulo">Endereço</label>
+                    <label for="endereco" class="campo__rotulo">Endereço (obrigatório)</label>
                     <input type="text" id="endereco" name="endereco" class="campo__entrada"
                         aria-describedby="ajuda-endereco erro-endereco">
                     <p class="campo__ajuda" id="ajuda-endereco">Digite rua e número.</p>
@@ -46,13 +46,14 @@
 
                 <!-- [PRONTO] Campo de Seleção: HTML e CSS com os 6 estados -->
                 <div class="campo" id="campo-abrigo">
-                    <label for="abrigo" class="campo__rotulo">Abrigo</label>
+                    <label for="abrigo" class="campo__rotulo">Abrigo (obrigatório)</label>
                     <select id="abrigo" name="abrigo" class="campo__entrada campo__selecao"
-                        aria-describedby="erro-abrigo" disabled>
+                        aria-describedby="ajuda-abrigo erro-abrigo" disabled>
                         <option value="">Escolha um abrigo</option>
                         <option value="a">Abrigo A</option>
                         <option value="b">Abrigo B</option>
                     </select>
+                    <p class="campo__ajuda" id="ajuda-abrigo">Preencha o endereço para liberar a escolha do abrigo.</p>
                     <p class="campo__erro" id="erro-abrigo" aria-live="polite"></p>
                 </div>
 
